@@ -1,4 +1,4 @@
-package com.softserve.edu;
+package com.softserve.edu01;
 
 import java.io.IOException;
 import java.util.Scanner;
