@@ -1,4 +1,9 @@
 package HW01;
+/*
+Define String variables name and address. Output question "What is your name?"
+Read the value name and output next question: “Where are you live, (name)?".
+Read address and write whole information
+*/
 
 import java.io.BufferedReader;
 import java.io.IOException;
