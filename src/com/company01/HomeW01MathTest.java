@@ -38,7 +38,7 @@ public class HomeW01MathTest {
         System.out.println("Ви написали: "+r+"/"+t+" Результат: "+d);
         s.close();
 
-        System.out.println("Task 2");
+        System.out.println(" Task 2");
         System.out.println("How are you?");
         Scanner sc = new Scanner(System.in);
         String variable = sc.nextLine();
