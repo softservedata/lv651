@@ -6,10 +6,11 @@ public class Task1 {
 		Scanner in  =  new Scanner(System.in);
 		int a;
 		int b;
-		System.out.println("¬вед≥ть перше значенн€");
+		System.out.println("First number");
 		a = in.nextInt();
-		System.out.println("¬вед≥ть друге значенн€");
+		System.out.println("Second number");
 		b = in.nextInt();
+		
 		System.out.println(a + b);
 		System.out.println(a - b);
 		System.out.println(a * b);
