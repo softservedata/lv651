@@ -1,4 +1,4 @@
-package com.softserve.edu01;
+package com.softserve.edu;
 
 public class Appl {
     private int i = 123;
