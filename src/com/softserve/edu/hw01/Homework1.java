@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Homework1 {
+public class first_appl {
 	private static final double radius = 5;
 
 	public static void main(String[] args) throws IOException {
@@ -16,9 +16,15 @@ public class Homework1 {
 		 * calculate: a + b a - b a * b a / b. Output obtained results.
 		 */
 
-		int a, b;
-		a = 5;
-		b = 2;
+		/*
+		 * int a, b; a = 5; b = 2;
+		 */
+
+		System.out.println("Put number a: ");
+		int a = Integer.parseInt(br.readLine());
+		System.out.println("Put number b: ");
+		int b = Integer.parseInt(br.readLine());
+
 		System.out.println("a + b = " + (a + b));
 		System.out.println("a - b = " + (a - b));
 		System.out.println("a * b = " + (a * b));
@@ -38,6 +44,8 @@ public class Homework1 {
 		 * entering the radius. Output obtained results
 		 */
 
+		System.out.println("Put number radius: ");
+		double radius = Integer.parseInt(br.readLine());
 		double perimeter = 2 * Math.PI * radius;
 		double area = Math.PI * Math.sqrt(radius);
 
@@ -63,13 +71,18 @@ public class Homework1 {
 		 * count for each call separately and all talk together? Input all source data
 		 * from console, make calculations and output to the screen
 		 */
-		System.out.println("Please enter the following data: ");
+		System.out.println("Please enter the following data cost1: ");
 		Scanner scan = new Scanner(System.in);
 		double c1 = scan.nextDouble();
+		System.out.println("Please enter the following data cost2: ");
 		double c2 = scan.nextDouble();
+		System.out.println("Please enter the following data cost3: ");
 		double c3 = scan.nextDouble();
+		System.out.println("Please enter the following data time1: ");
 		double t1 = scan.nextDouble();
+		System.out.println("Please enter the following data time1: ");
 		double t2 = scan.nextDouble();
+		System.out.println("Please enter the following data time1: ");
 		double t3 = scan.nextDouble();
 
 		System.out.println("The cost of a conversation with the first country: " + (c1 * t1));
