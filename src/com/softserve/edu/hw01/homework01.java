@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Appl {
+public class homework01 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -68,9 +68,6 @@ public class Appl {
         System.out.println("Price for 2nd call: "+price2);
         System.out.println("Price for 3th call: "+price3);
         System.out.println("Price for all calls together: "+all_prices);
-
-
-
 
     }
 }
