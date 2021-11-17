@@ -1,6 +1,6 @@
 package HW04;
 
-public class MainProg {
+public class MainEmployee {
     public static void main(String[] args) {
         Employee wTom = new Employee("Tom", 100);
         Employee wJohn = new Employee("John", 200, 8);
