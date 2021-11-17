@@ -34,5 +34,8 @@ public class Appl {
         //
         int k = 65;
         System.out.println("k = " + k + " (char)k = " + (char) k);
+        System.out.println("k = " + k + " (char)k = " + (char) k);
+        System.out.println("k = " + k + " (char)k = " + (char) k);
+
     }
 }
