@@ -15,8 +15,8 @@ public class Person {
 
     public Person() {
         countPerson++;
-        this.firstName = "firstName_" + (countPerson);
-        this.lastName = "lastName_" + (countPerson);
+        this.firstName = "firstName_" + countPerson;
+        this.lastName = "lastName_" + countPerson;
     }
 
     public Person(String firstName, String lastName, int birthYear) {
