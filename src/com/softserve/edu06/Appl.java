@@ -30,7 +30,6 @@ public class Appl {
         System.out.println("arays.equals(monthDays, monthDays3) = "
                 + Arrays.equals(monthDays, monthDays3));
         //
-        //
         System.out.print("Compare Arrays isEqual = ");
         boolean isEqual = true;
         for (int i = 0; isEqual && i < monthDays.length; i = i + 1) {
@@ -44,16 +43,16 @@ public class Appl {
             System.out.print(monthDays[i] + "  ");
         }
         */
+        int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         /*-
         int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         System.out.println("\n0. for (int i=0; ...)");
-        // for (int i = 0; i < monthDays.length; i = i + 2) {
+        //for (int i = 0; i < monthDays.length; i = i + 2) {
         for (int i = 0; i < monthDays.length; i++) {
             if (i % 2 == 1) {
                 System.out.print(monthDays[i] + "  ");
             }
         }
-        //
         //
         System.out.println("\n1. for (int i=0; ...)");
         for (int i = 0; i < monthDays.length; i++) {
@@ -89,8 +88,8 @@ public class Appl {
         System.out.println("\n6. simple for(;;,);");
         for (int j = 0; j < monthDays.length; System.out.print(monthDays[j] + "  "), j++);
         */
-        /*-
-        int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        // /*-
+        //int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         System.out.println("\n7. for (... ; ; ...)");
         for (int j = 0;; j++) {
             if (j >= monthDays.length / 2) {
@@ -107,8 +106,9 @@ public class Appl {
             }
             System.out.print(monthDays[j] + "  ");
         }
-        */
-        // /*-
+        // */
+        //
+        /*-
         System.out.println("\n9. irregular0");
         int[][] irregular0;
         irregular0 = new int[4][];
@@ -164,6 +164,6 @@ public class Appl {
         int k1 = 5;
         int k2 = k1++;
         System.out.println("\nk2 = " + k2);
-        // */
+        */
     }
 }
