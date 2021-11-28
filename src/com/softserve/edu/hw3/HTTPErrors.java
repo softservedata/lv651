@@ -6,18 +6,41 @@ import java.io.InputStreamReader;
 
 public class HTTPErrors {
     public enum httpError {
-        400("BadRequest"), 401("Unauthorized"), 403("Forbidden"), 404("NotFound");
-        private String name;
+        BadRequest(400),
+        Unauthorized(401),
+        Forbidden(403),
+        NotFound(404);
+        
+        private final Integer value;
 
-        private httpError(String name){
-            this.name = name;
+        private httpError(Integer value){
+            this.value = value;
+        }
+        public Integer getValue(){
+            return value;
         }
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Please enter error number: ");
-        int n1 = Integer.parseInt(br.readLine());
 
-        System.out.println("Name of error: " + n1);
+        System.out.println("Please enter error numbers 400-405: ");
+        int input = Integer.parseInt(br.readLine());
+
+        switch (input)  {
+            case 400:
+                System.out.println("Name of error: " + httpError.BadRequest);
+                break;
+            case 401:
+                System.out.println("Name of error: " + httpError.Unauthorized);
+                break;
+            case 403:
+                System.out.println("Name of error: " + httpError.Forbidden);
+                break;
+            case 404:
+                System.out.println("Name of error: " + httpError.NotFound);
+                break;
+            default:
+                System.out.println("Wrong input!");
+        }
     }
 }
