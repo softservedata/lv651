@@ -54,6 +54,9 @@ public class Dog {
         oldestDog = pes3;
 
         System.out.println(
-                "The oldest dog is: \n" + "Name - " + oldestDog.getName() + ", \n" +  "Bread - " + oldestDog.getDogBread() + ", \n" + "Age - " + oldestDog.getAge() + " years");
+                "The oldest dog is: \n" +
+                        "Name - " + oldestDog.getName() + ", \n" +
+                        "Bread - " + oldestDog.getDogBread() + ", \n" +
+                        "Age - " + oldestDog.getAge() + " years");
     }
 }
