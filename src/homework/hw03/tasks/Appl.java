@@ -1,4 +1,4 @@
-package homework.lesson4;
+package homework.hw03.tasks;
 
 public class Appl {
     public static void main(String[] args) {

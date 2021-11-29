@@ -1,4 +1,4 @@
-package homework.lesson4;
+package homework.hw03.tasks;
 
 import java.util.Scanner;
 
@@ -13,10 +13,10 @@ public class Person {
         this.birthYear = 2021;
     }
 
-    public Person(String firstName, String lastName, int birthYear) {
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.birthYear = birthYear;
+        this.birthYear = 2021;
     }
 
     public String getFirstName(){

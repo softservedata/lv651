@@ -1,4 +1,4 @@
-package homework.lesson5.practicaltasks;
+package homework.hw04.practicaltasks;
 
 public class Product {
     private String name;

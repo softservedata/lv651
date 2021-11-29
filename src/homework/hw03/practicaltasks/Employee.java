@@ -1,4 +1,4 @@
-package homework.lesson4.tasks;
+package homework.hw03.practicaltasks;
 
 public class Employee {
     private String name;
@@ -11,6 +11,11 @@ public class Employee {
         this.name = "";
         this.rate = 0;
         this.hours = 0;
+    }
+
+    public Employee(String name, int rate) {
+        this.name = name;
+        this.rate = rate;
     }
 
     public Employee(String name, int rate, int hours) {

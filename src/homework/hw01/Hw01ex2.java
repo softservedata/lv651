@@ -1,4 +1,4 @@
-package homework.lesson1;
+package homework.hw01;
 /*
     Define String variables name and address.
     Output question "What is your name?"

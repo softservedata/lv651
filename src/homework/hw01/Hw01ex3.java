@@ -1,4 +1,4 @@
-package homework.lesson1;
+package homework.hw01;
 /*
     Phone calls from three different countries are с1, с2 and с3 standard units per minute.
     Talks continued t1, t2 and t3 minutes. How much computer will count for each call separately and all talk
