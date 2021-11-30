@@ -1,4 +1,4 @@
-package HW05.PracticalTasks;
+package HW04.PracticalTasks;
 
 import java.io.BufferedReader;
 import java.io.IOException;

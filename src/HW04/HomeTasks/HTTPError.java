@@ -1,7 +1,4 @@
-package HW05.HomeTasks;
-
-import HW05.PracticalTasks.Continent;
-import HW05.PracticalTasks.Country;
+package HW04.HomeTasks;
 
 public enum HTTPError {
     BAD_REQUEST (400,"Bad Request"),

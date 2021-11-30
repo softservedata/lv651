@@ -1,6 +1,5 @@
-package HW05.HomeTasks;
+package HW04.HomeTasks;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class HT1_3 {

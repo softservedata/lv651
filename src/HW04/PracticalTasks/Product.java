@@ -1,6 +1,4 @@
-package HW05.PracticalTasks;
-
-import java.util.Objects;
+package HW04.PracticalTasks;
 
 public class Product {
     private String name;

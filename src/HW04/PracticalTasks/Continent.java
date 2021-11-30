@@ -1,4 +1,4 @@
-package HW05.PracticalTasks;
+package HW04.PracticalTasks;
 
 public enum Continent {
     AFRICA,

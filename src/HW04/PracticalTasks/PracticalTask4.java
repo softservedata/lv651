@@ -1,4 +1,4 @@
-package HW05.PracticalTasks;
+package HW04.PracticalTasks;
 
 public class PracticalTask4 {
     public static void main(String[] args) {

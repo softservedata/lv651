@@ -1,6 +1,4 @@
-package HW05.PracticalTasks;
-
-import java.util.Locale;
+package HW04.PracticalTasks;
 
 public enum Country {
     AT("Austria", Continent.EUROPE, 43),

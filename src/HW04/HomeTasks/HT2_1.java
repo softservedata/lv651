@@ -1,4 +1,4 @@
-package HW05.HomeTasks;
+package HW04.HomeTasks;
 
 public class HT2_1 {
     public static void main(String[] args) {

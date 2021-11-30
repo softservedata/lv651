@@ -1,4 +1,4 @@
-package HW05.HomeTasks;
+package HW04.HomeTasks;
 
 public enum Breed {
     BOXER,
