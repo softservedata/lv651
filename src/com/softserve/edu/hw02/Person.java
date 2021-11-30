@@ -13,22 +13,18 @@ public class Person {
 	public static void main(String[] args) {
 	
 		System.out.println("Hi!");
-		Person p1 = new Person();
-		Person p2 = new Person();
-		Person p3 = new Person();
-		Person p4 = new Person();
-		Person p5 = new Person();
 		
-		input(p1);	p1.output();
-		input(p2);	p2.output();
-		input(p3);	p3.output();
-		input(p4);	p4.output();
-		input(p5);	p5.output();
+		Person p1 = new Person();		input(p1);	
+		Person p2 = new Person();		input(p2);	
+		Person p3 = new Person();		input(p3);		
+		Person p4 = new Person();		input(p4);	
+		Person p5 = new Person();		input(p5);	
 		
-		
-		
-
-		
+		p1.output();
+		p2.output();
+		p3.output();
+		p4.output();
+		p5.output();
 	}
 
 	public Person () {
@@ -66,10 +62,6 @@ public class Person {
 		this.lastName = lastName;
 	}
 
-	public int getBirthYear() {
-		return birthYear;
-	}
-
 	private void setBirthYear(int birthYear) {
 		this.birthYear = birthYear;
 		
@@ -80,30 +72,30 @@ public class Person {
 		return Calendar.getInstance().get(Calendar.YEAR)-birthYear; 
 	}
 	
-	@Override
-	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", birthYear=" + birthYear + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", birthYear=" + birthYear + "]";
+//	}
 	
 	public  void output( ) {
 		
-		  System.out.println("Person" + id+ 		 "	[lastName = " + lastName + 
+		  System.out.println("Person_" + id+ 		 "	[lastName = " + lastName + 
 				   ", firstName = " + firstName + 
 				   ", age = " +( Calendar.getInstance().get(Calendar.YEAR)-birthYear) + " years]");
 	}
 	
 		public static Person input (Person p ) {
-		System.out.println("Hello! Input first name: ");
+		System.out.println(" Input first name of Person_"+id+" : ");
 		Scanner sc = new Scanner(System.in);
 		String fn = sc.nextLine();
 		p.setFirstName(fn);
-		System.out.println(" Input last name: ");
+		System.out.println(" Input last name of Person_"+id+" : ");
 		String ln = sc.nextLine();
 		p.setLastName(ln);
 		System.out.println(" Input year of birth: ");
 		int birthYear = Integer.parseInt(sc.nextLine()); 
 		p.setBirthYear(birthYear);
-		sc.close();
+		//sc.close();
 		return p;
 	}
 		
