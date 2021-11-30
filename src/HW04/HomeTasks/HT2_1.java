@@ -15,13 +15,13 @@ public class HT2_1 {
         Dog fex = new Dog("FEX", Breed.SPANIEL, 3);
 
         System.out.println("rex has the same name as rex2: " + rex.equals(rex2));
-        if (rex.olderThan(pex) && rex.olderThan(fex)){
+        if (rex.olderThan(pex) && rex.olderThan(fex)) {
             System.out.println("The oldest dog is " + rex.getName() + ". Age:" + rex.getAge());
         }
-        if (pex.olderThan(rex) && pex.olderThan(fex)){
+        if (pex.olderThan(rex) && pex.olderThan(fex)) {
             System.out.println("The oldest dog is " + pex.getName() + ". Age:" + pex.getAge());
         }
-        if (fex.olderThan(rex) && fex.olderThan(pex)){
+        if (fex.olderThan(rex) && fex.olderThan(pex)) {
             System.out.println("The oldest dog is " + fex.getName() + ". Age:" + fex.getAge());
         }
     }

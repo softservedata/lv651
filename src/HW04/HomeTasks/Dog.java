@@ -47,8 +47,8 @@ public class Dog {
         return Objects.hash(name);
     }
 
-    public boolean olderThan(Dog dog){
-        return this.age> dog.getAge();
+    public boolean olderThan(Dog dog) {
+        return this.age > dog.getAge();
     }
 
 }

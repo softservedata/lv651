@@ -11,11 +11,11 @@ public class HT1_3 {
         System.out.println("Enter HTTP Error number (400...407)");
         do {
             String str = input.nextLine();
-            if (str.toUpperCase().equals("EXIT")) {
+            if (str.equalsIgnoreCase("EXIT")) {
                 break;
             }
             int number = Integer.parseInt(str);
             System.out.println(HTTPError.getDescriptionByErrorNumber(number));
-        }while (true);
+        } while (true);
     }
 }
