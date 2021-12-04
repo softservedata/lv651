@@ -1,4 +1,4 @@
-package com.company.edu.pt4;
+package com.company.edu.pt3;
 import java.util.Scanner;
 public class head {
 

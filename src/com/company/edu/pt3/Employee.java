@@ -1,4 +1,4 @@
-package com.company.edu.pt4;
+package com.company.edu.pt3;
 
 public class Employee {
     private String name;
