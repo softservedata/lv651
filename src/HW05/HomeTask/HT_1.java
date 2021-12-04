@@ -13,7 +13,7 @@ public class HT_1 {
         System.out.println("Enter number of month. I'll tell how many days it has");
         do {
             String ans = scanner.nextLine();
-            if (ans.equals("Exit")) {
+            if (ans.equalsIgnoreCase("Exit")) {
                 break;
             }
             int numMonth = Integer.parseInt(ans);
