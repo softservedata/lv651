@@ -34,6 +34,8 @@ public class HT_3 {
         } else {
             System.out.println("Position of second positive number:" + positiveNumberPosition);
         }
+        int minNumber = getMinNumber();
+        System.out.println("Minimum is " + minNumber + " and its position in array is :" + (getMinNumberPosition(minNumber) + 1));
         System.out.println("Well done!!!");
 
         //Subtask №2
@@ -48,6 +50,14 @@ public class HT_3 {
         System.out.println("the product of all entered even numbers :" + product);
     }
 
+    private static int getMinNumberPosition(int minNumber) {
+        int i = 0;
+        while (ints[i] != minNumber && i < ints.length) {
+            i++;
+        }
+        return i;
+    }
+
     private static int gePositiveNumberPosition(int pos) {
         int i = 0;
         int countPosNum = 0;
@@ -60,5 +70,14 @@ public class HT_3 {
         if (pos > ints.length || countPosNum < pos) i = -1;
 
         return i;
+    }
+
+    //gets min for array ints
+    private static int getMinNumber() {
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < ints.length; i++) {
+            min = ints[i] < min ? ints[i] : min;
+        }
+        return min;
     }
 }
