@@ -34,6 +34,8 @@ public class HT_3 {
         } else {
             System.out.println("Position of second positive number:" + positiveNumberPosition);
         }
+        //Don't use Arrays.sort and Arrays.binarySearch() because element position in sorted array will wrong!!!;
+        //binarySearch don't work with unsorted arrays
         int minNumber = getMinNumber();
         System.out.println("Minimum is " + minNumber + " and its position in array is :" + (getMinNumberPosition(minNumber) + 1));
         System.out.println("Well done!!!");
