@@ -1,7 +1,6 @@
 package HW05.AdditionalTasks;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Task2 {
     /*2.	Утворити та видрукувати послідовність  , елементи якої  утворюються за наступним правилом:
