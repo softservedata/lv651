@@ -39,7 +39,12 @@ public class Employee {
 	public double getSalary() {
 		return rate * hours;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", rate=" + rate + ", hours=" + hours + "]";
+	}
+	
 	public double getBonuses() {
 		return rate * 0.1;
 	}
@@ -60,12 +65,7 @@ public class Employee {
 		this.rate = rate;
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [name=" + name + ", rate=" + rate + ", hours=" + hours + "]";
-	}
-
-	public void changeRate(double d) {
+		public void changeRate(double d) {
 
 	}
 

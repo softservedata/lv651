@@ -16,41 +16,37 @@ changeName(String fn, String ln) - to change the first name or/and last name of 
 
 In the method main() create 5 objects of Person type and input information about them.*/
 
-
 public class Person {
 
 	private String firstName;
 	private String lastName;
 	private int birthYear;
-	
+
 	public static Person input() {
 		Scanner scan = new Scanner(System.in);
-			Person p = new Person();
-			System.out.print("First name: ");
-			p.setFirstName(scan.next());
-			System.out.print("Last name: ");
-			p.setLastName(scan.next());
-			System.out.print("Birth year: ");
-			p.setBirthYear(scan.nextInt());
-			return p;
-		}
-		
+		Person p = new Person();
+		System.out.print("First name: ");
+		p.setFirstName(scan.next());
+		System.out.print("Last name: ");
+		p.setLastName(scan.next());
+		System.out.print("Birth year: ");
+		p.setBirthYear(scan.nextInt());
+		return p;
+	}
+
+	public Person() {
+
+	}
 
 	public Person(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 
-	 public Person(){
-	        this.firstName = firstName;
-	        this.lastName = lastName;
-	        this.birthYear = birthYear;
-	 }  
 	public int getAge() {
 		return 2021 - birthYear;
 	}
-	
-	
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -75,13 +71,13 @@ public class Person {
 		this.birthYear = birthYear;
 	}
 
-	void changeName(String fn, String ln){
-        firstName = fn;
-        lastName = ln;
-    }
+	void changeName(String fn, String ln) {
+		firstName = fn;
+		lastName = ln;
+	}
 
 	public String output() {
 		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", birthYear=" + birthYear + "]";
 	}
-	
+
 }
