@@ -44,8 +44,8 @@ public class Dog {
     public static void main(String args [])
     {
         Dog dog1 = new Dog("Eger", 8,"Labrador");
-        Dog dog2 = new Dog("Rose", 3,"Rotvailer");
-        Dog dog3 = new Dog("Balto", 9,"Haski");
+        Dog dog2 = new Dog("Rose", 3,"Rottweiler");
+        Dog dog3 = new Dog("Balto", 9,"Huskies");
         if(dog1.getName() == dog2.getName())
             System.out.println("Dog 1 have the same name as dog 2." + "(" + dog1.getName() + ")");
         if(dog2.getName() == dog3.getName())
