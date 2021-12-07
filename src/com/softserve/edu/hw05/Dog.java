@@ -39,7 +39,7 @@ public class Dog {
     }
     public enum breeds
     {
-        Labrador,Rotvailer,Haski;
+        Labrador,Rottweiler,Huskies;
     }
     public static void main(String args [])
     {
