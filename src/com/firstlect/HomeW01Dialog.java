@@ -1,4 +1,4 @@
-package com.company01;
+package com.firstlect;
 
 import java.util.Scanner;
 
