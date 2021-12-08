@@ -1,7 +1,5 @@
 package com.softserve.edu.hw06;
 
-import java.util.Arrays;
-
 public class Main {
 
 	public static void main(String[] args) {
