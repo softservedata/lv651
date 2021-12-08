@@ -1,4 +1,4 @@
-package conditionStatements;
+package com.softserve.conditionStatements;
 
 import java.util.Scanner;
 

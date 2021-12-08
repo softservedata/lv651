@@ -1,4 +1,4 @@
-package com.softserve;
+package com.softserve.introduction;
 
 import java.util.Scanner;
 

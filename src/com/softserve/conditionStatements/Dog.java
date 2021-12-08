@@ -1,4 +1,4 @@
-package conditionStatements;
+package com.softserve.conditionStatements;
 
 public class Dog {
     private String name;
