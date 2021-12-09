@@ -19,6 +19,6 @@ public class Task8 {
         }
         int nsd = a;
         System.out.println("Найбільший спільний дільник: " + nsd );
-
+        scanner.close();
     }
 }
