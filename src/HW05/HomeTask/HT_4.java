@@ -1,6 +1,5 @@
 package HW05.HomeTask;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HT_4 {
