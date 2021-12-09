@@ -35,5 +35,6 @@ public class HT_4 {
         }else{
             System.out.println(carSetFiltered);
         }
+        scanner.close();
     }
 }
