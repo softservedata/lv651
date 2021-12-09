@@ -1,4 +1,4 @@
-package com.softserve.conditionStatements;
+package com.softserve.conditionstatements;
 
 public class Product {
     private String name;

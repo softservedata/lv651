@@ -1,7 +1,5 @@
 package com.softserve.arraysloops.practicaltask;
 
-import com.softserve.arraysloops.practicaltask.Employee;
-
 import java.util.Scanner;
 
 public class PracticalTask {

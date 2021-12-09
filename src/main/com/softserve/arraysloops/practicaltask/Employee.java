@@ -1,7 +1,5 @@
 package com.softserve.arraysloops.practicaltask;
 
-import javax.swing.plaf.basic.BasicLabelUI;
-
 public class Employee {
     private String name;
     private int departmentNumber;
