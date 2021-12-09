@@ -50,6 +50,7 @@ public class HT_3 {
             if (i % 2 == 0) product = product * i;
         } while (true);
         System.out.println("the product of all entered even numbers :" + product);
+        scanner.close();
     }
 
     private static int getMinNumberPosition(int minNumber) {
