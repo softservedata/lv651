@@ -17,5 +17,6 @@ public class HT1_3 {
             int number = Integer.parseInt(str);
             System.out.println(HTTPError.getDescriptionByErrorNumber(number));
         } while (true);
+        input.close();
     }
 }

@@ -15,7 +15,7 @@ public class Task11 {
         int n = Integer.parseInt(scanner.nextLine()); //Кількість покупців
         int[]t = new int[n];
         for (int i = 0; i < n; i++) {
-            t[i]=
+            //t[i]=
         }
         scanner.close();
     }
