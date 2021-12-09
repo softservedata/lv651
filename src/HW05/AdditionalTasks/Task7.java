@@ -19,5 +19,6 @@ public class Task7 {
         Scanner scanner = new Scanner(System.in);
         int pos = Integer.parseInt(scanner.nextLine());
         System.out.println("number '" + sequence.charAt(pos-1) + "' is on the " + pos + " position.");
+        scanner.close();
     }
 }
