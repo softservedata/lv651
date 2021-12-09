@@ -7,12 +7,13 @@ import java.util.Arrays;
 
 public class Employee {
 
-    private String name, dep_number;
-    private int salary;
+    private String name;
+    private int salary,dep_number;
 
-    public Employee(String name, int salary) {
+    public Employee(String name, int salary, int dep_number) {
         this.name = name;
         this.salary = salary;
+        this.dep_number = dep_number;
     }
 
     public String getName() {
@@ -23,11 +24,11 @@ public class Employee {
         this.name = name;
     }
 
-    public String getDep_number() {
+    public int getDep_number() {
         return dep_number;
     }
 
-    public void setDep_number(String dep_number) {
+    public void setDep_number(int dep_number) {
         this.dep_number = dep_number;
     }
 
@@ -39,12 +40,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public void depNumb() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String dep_number = br.readLine();
-            this.dep_number = dep_number;
 
-    }
 
 
     @Override
@@ -57,30 +53,38 @@ public class Employee {
 
 
     public static void main(String[] args) throws IOException {
-        Employee employee1 = new Employee("Denis", 7500);
-        Employee employee2 = new Employee("Michael", 3504);
-        Employee employee3 = new Employee("Vova", 6541);
-        Employee employee4 = new Employee("Ival", 3576);
-        Employee employee5 = new Employee("Max", 4120);
-        System.out.print("Enter department number of employee " + employee1.getName() + ": ");
-        employee1.depNumb();
-        System.out.print("Enter department number of employee " + employee2.getName() + ": ");
-        employee2.depNumb();
-        System.out.print("Enter department number of employee " + employee3.getName() + ": ");
-        employee3.depNumb();
-        System.out.print("Enter department number of employee " + employee4.getName() + ": ");
-        employee4.depNumb();
-        System.out.print("Enter department number of employee " + employee5.getName() + ": ");
-        employee5.depNumb();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Employee employee1 = new Employee("Denis", 7500,4500);
+        Employee employee2 = new Employee("Michael", 3504,5000);
+        Employee employee3 = new Employee("Vova", 6541,4500);
+        Employee employee4 = new Employee("Ival", 3576,3695);
+        Employee employee5 = new Employee("Max", 4120,4568);
 
-        Employee [] employee = new Employee[5];
-        employee[0] = new Employee("Denis", 7500);
-        employee[1] = new Employee("Michael", 3504);
-        employee[2] = new Employee("Vova", 6541);
-        employee[3] = new Employee("Ival", 3576);
-        employee[4] =new Employee("Max", 4120);
-        System.out.println(Arrays.toString(employee));
 
+        Employee[] emp = {employee1,employee2 ,employee3 , employee4, employee5};
+        Employee tmp;
+        for (int i = 0; i < emp.length - 1; i++) {
+            for (int j = i + 1; j < emp.length; j++) {
+                if (emp[i].getSalary() < emp[j].getSalary()) {
+                    tmp = emp[i];
+                    emp[i] = emp[j];
+                    emp[j] = tmp;
+                }
+            }
+        }
+        System.out.println("All workersk sorted by salary: ");
+        for (int i = 0; i < emp.length; i++) {
+            System.out.println("\t" + emp[i].toString());
+        }
+
+        System.out.println("Enter number of department: ");
+        int x = Integer.parseInt(br.readLine());
+        System.out.println("Workers from " + x + " department:");
+        for (int i = 0; i < emp.length; i++) {
+            if (emp[i].getDep_number() == x) {
+                System.out.println("\t" + emp[i].toString());
+            }
+        }
 
 
         }
