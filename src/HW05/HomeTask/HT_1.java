@@ -25,5 +25,6 @@ public class HT_1 {
             System.out.println("Month № " + numMonth + " has " + monses[numMonth - 1] + " days.");
 
         } while (true);
+        scanner.close();
     }
 }
