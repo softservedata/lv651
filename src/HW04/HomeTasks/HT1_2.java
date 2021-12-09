@@ -21,5 +21,6 @@ public class HT1_2 {
         }
         System.out.println("min number is:" + min);
         System.out.println("max number is:" + max);
+        input.close();
     }
 }
