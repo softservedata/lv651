@@ -30,7 +30,7 @@ public class Task6 {
         else {
             System.out.println("Введено невірне співвідношення чисел.");
         }
-
+        scanner.close();
     }
 
     private static int getPosition(int[] n, int numForCount) {

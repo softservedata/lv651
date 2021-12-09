@@ -18,6 +18,6 @@ public class Task4 {
             elem = elem + arr[i];
             System.out.printf("%.1f  ", elem);
         }
-
+        scanner.close();
     }
 }

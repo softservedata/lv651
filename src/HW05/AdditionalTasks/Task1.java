@@ -16,6 +16,7 @@ public class Task1 {
             int y = Integer.parseInt(nextLine);
             System.out.println("Century :" + getСentury(y));
         } while (true);
+        scanner.close();
     }
 
     private static int getСentury(int y) {

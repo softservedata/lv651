@@ -18,6 +18,7 @@ public class Task5 {
         System.out.print("Введи сторону c:");
         int c = Integer.parseInt(scanner.nextLine());
         System.out.println(getTriangleMessage(a, b, c));
+        scanner.close();
     }
 
     private static String getTriangleMessage(int a, int b, int c) {
