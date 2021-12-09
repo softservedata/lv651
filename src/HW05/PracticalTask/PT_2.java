@@ -31,6 +31,7 @@ public class PT_2 {
         sortBySalaryDesc(company);
         System.out.println("Print employee after sorting.");
         printEmployee(company);
+        scanner.close();
     }
 
     private static void printEmployee(Employee[] company) {
