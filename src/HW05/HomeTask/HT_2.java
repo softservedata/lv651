@@ -29,6 +29,7 @@ public class HT_2 {
             System.out.println("Some of first five digits are negative.");
             System.out.println("So their product is:" + getMul(10));
         }
+        scanner.close();
     }
 
     private static boolean isFirstFiveDigPositive() {
