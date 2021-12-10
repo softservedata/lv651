@@ -1,7 +1,7 @@
 package com.softserve.arraysloops.homework;
 
 public class Car {
-    private String type;
+    public  String type;
     private int yearProduction;
     private int engineCapacity;
 
@@ -10,6 +10,7 @@ public class Car {
         this.yearProduction = yearProduction;
         this.engineCapacity = engineCapacity;
     }
+
 
     public String getType() {
         return type;
@@ -22,4 +23,6 @@ public class Car {
     public int getEngineCapacity() {
         return engineCapacity;
     }
+
+
 }

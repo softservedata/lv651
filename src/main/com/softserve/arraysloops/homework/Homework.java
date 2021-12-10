@@ -98,9 +98,9 @@ public class Homework {
 
         System.out.println("Second positive: " + secondPos(arr));
 
-        for (int i = 0; i < arr.length; i++) {
-            if (minNum > arr[i]) {
-                minNum = arr[i];
+        for (int k : arr) {
+            if (minNum > k) {
+                minNum = k;
             }
         }
         System.out.println("This is the minimum number in array: " + minNum);
@@ -126,12 +126,12 @@ public class Homework {
         int positive1 = 0;
         int positive2 = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0) {
+        for (int j : arr) {
+            if (j > 0) {
                 if (positive1 == 0) {
-                    positive1 = arr[i];
+                    positive1 = j;
                 } else {
-                    positive2 = arr[i];
+                    positive2 = j;
                     break;
                 }
             }
@@ -145,13 +145,11 @@ public class Homework {
         Car car3 = new Car("Skoda", 1996, 4);
         Car car4 = new Car("Honda", 2020, 2);
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter year of the car: ");
+        Car car = findCarByYear(sc.nextInt());
 
-        System.out.println("Cars years: \n" +
-                car1.getType() + " is " + extractYearIfCarPresent(car1.getYearProduction()) + "\n" +
-                car2.getType() + " is " + extractYearIfCarPresent(car2.getYearProduction()) + "\n" +
-                car3.getType() + " is " + extractYearIfCarPresent(car3.getYearProduction()) + "\n" +
-                car4.getType() + " is " + extractYearIfCarPresent(car4.getYearProduction()) + "\n");
-
+        System.out.println("This is the car " + car.getType() + " of that year: " + car.getYearProduction());
 
         Car[] carYear = new Car[]{car1, car2, car3, car4};
         Car yearsCar = null;
@@ -168,14 +166,13 @@ public class Homework {
         System.out.println();
 
         System.out.println("Cars ordered by field year : ");
-        for (int i = 0; i < carYear.length; i++) {
-            System.out.println(carYear[i].getType() + " is this year of production " + carYear[i].getYearProduction() + ".");
+        for (Car value : carYear) {
+            System.out.println(value.getType() + " is this year of production " + value.getYearProduction() + ".");
         }
-
         System.out.println();
     }
 
-    public int extractYearIfCarPresent(int year) {
+    public Car findCarByYear(int year) {
         Car car1 = new Car("Toyota", 2008, 3);
         Car car2 = new Car("Nissan", 2010, 1);
         Car car3 = new Car("Skoda", 1996, 4);
@@ -183,12 +180,12 @@ public class Homework {
 
         Car[] carsArr = new Car[]{car1, car2, car3, car4};
 
-        for (int i = 0; i < carsArr.length; i++) {
-            if (carsArr[i].getYearProduction() == year) {
-                return carsArr[i].getYearProduction();
+        for (Car car : carsArr) {
+            if (car.getYearProduction() == year) {
+                return car;
             }
         }
-        return 0;
+        return null;
     }
 
 }

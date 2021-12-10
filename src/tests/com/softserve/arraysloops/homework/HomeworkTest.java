@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 
 class HomeworkTest {
@@ -13,6 +14,7 @@ class HomeworkTest {
     @BeforeEach
     private void init() {
         homework = new Homework();
+
     }
 
     @Test
@@ -42,11 +44,13 @@ class HomeworkTest {
 
     @Test
     public void checkCars() {
-        assertEquals(2008, homework.extractYearIfCarPresent(2008));
-        assertEquals(2010, homework.extractYearIfCarPresent(2010));
-        assertEquals(1996, homework.extractYearIfCarPresent(1996));
-        assertEquals(2020, homework.extractYearIfCarPresent(2020));
-        assertEquals(0, homework.extractYearIfCarPresent(545245326));
+        int[] carArr = new int[]{2008,2010,1996,2020,0};
+
+        assertEquals(carArr[0], homework.findCarByYear(2008).getYearProduction());
+        assertEquals(carArr[1], homework.findCarByYear(2010).getYearProduction());
+        assertEquals(carArr[2], homework.findCarByYear(1996).getYearProduction());
+        assertEquals(carArr[3], homework.findCarByYear(2020).getYearProduction());
+        assertNull(homework.findCarByYear(583798));
     }
 
     @Test
