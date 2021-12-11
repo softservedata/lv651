@@ -14,5 +14,6 @@ public enum CarProducer {
     BMW,
     RENAULT,
     PEUGEOT,
-    CITROEN;
+    CITROEN,
+    MAN;
 }
