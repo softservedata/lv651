@@ -23,16 +23,16 @@ public class Task2 {
 			}
 		}
 		System.out.println("All workersk sorted by salary: ");
-		for (int i = 0; i < emp.length; i++) {
-			System.out.println("\t" + emp[i].toString());
+		for (Employee employee : emp) {
+			System.out.println("\t" + employee.toString());
 		}
 
 		System.out.println("Enter number of department: ");
 		int x = sc.nextInt();
 		System.out.println("Workers from " + x + " department:");
-		for (int i = 0; i < emp.length; i++) {
-			if (emp[i].getDnum() == x) {
-				System.out.println("\t" + emp[i].toString());
+		for (Employee employee : emp) {
+			if (employee.getDnum() == x) {
+				System.out.println("\t" + employee.toString());
 			}
 		}
 	}

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int position = -1, positionmin = -1, min, prod = 1, a;
+		int position = -1, positionmin = 0, min, prod = 1, a;
 		int count = 0;
 		boolean isNegative = false;
 		int[] arr = new int[5];
@@ -48,9 +48,7 @@ public class Task3 {
 		if (position > -1) {
 			System.out.println("\tposition of second positive number: " + position);
 		}
-		if (positionmin > -1) {
-			System.out.println("\tminimum: " + min + "\n\tposition(min): " + positionmin);
-		}
+		System.out.println("\tminimum: " + min + "\n\tposition(min): " + positionmin);
 		if (isNegative) {
 			System.out.println("Product of all entered numbers: " + prod);
 		}

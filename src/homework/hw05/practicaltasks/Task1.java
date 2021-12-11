@@ -1,16 +1,15 @@
 package homework.hw05.practicaltasks;
 
 public class Task1 {
-
 	public static void main(String[] args) {
 		int[] integers = {10, 15, -20, 7, -8, -21, -41, 55, 9, 0};
 		int count1 = 0, count2 = 0, max = integers[0], sum = 0;
-		for	(int i = 0; i < integers.length; i++) {
-			if (max < integers[i]) {
-				max = integers[i];
+		for (int integer : integers) {
+			if (max < integer) {
+				max = integer;
 			}
-			if (integers[i] >= 0) {
-				sum = sum + integers[i];
+			if (integer >= 0) {
+				sum = sum + integer;
 				count1++;
 			} else {
 				count2++;
