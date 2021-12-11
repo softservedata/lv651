@@ -7,5 +7,6 @@ public enum CarType {
     SPORTS_CAR,
     STATION_WAGON,
     MINIVAN,
-    PICKUP_TRUCK;
+    PICKUP_TRUCK,
+    TRUCK;
 }
