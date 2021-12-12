@@ -10,10 +10,10 @@ public class HW_1 {
     */
     public static void main(String[] args) {
         Bird[] zoo = {
-                new Eagle(),
-                new Swallow(),
-                new Penguin(),
-                new Chicken()
+                new Eagle(true,true),
+                new Swallow(false,true),
+                new Penguin(true, false),
+                new Chicken(false,false)
         };
 
         printListBirds(zoo);
@@ -21,7 +21,8 @@ public class HW_1 {
 
     private static void printListBirds(Bird[] zoo) {
         for (Bird b : zoo) {
-            System.out.println("I am a " + b.getName() + " " + b.fly());
+            //System.out.println("I am a " + b.getName() + " " + b.fly());
+            System.out.println(b + " " + b.fly());
         }
     }
 }
@@ -33,6 +34,14 @@ abstract class Bird {
     abstract String fly();
 
     abstract String getName();
+
+    @Override
+    public String toString() {
+        return "I am a " + getName() +
+                " I " + (feathers ? " have " : " haven't ") + "feathers" +
+                " and I " + (layEggs ? " can " : " can't ") + "layEggs."
+                ;
+    }
 }
 
 class FlyingBird extends Bird {
@@ -49,8 +58,6 @@ class FlyingBird extends Bird {
     public String getName() {
         return "";
     }
-
-    ;
 }
 
 class NonFlyingBird extends Bird {
@@ -67,8 +74,6 @@ class NonFlyingBird extends Bird {
     public String getName() {
         return "";
     }
-
-    ;
 }
 
 class Eagle extends FlyingBird {
@@ -79,9 +84,22 @@ class Eagle extends FlyingBird {
         name = "Eagle";
     }
 
+    public Eagle(boolean feathers, boolean layEggs) {
+        super(feathers, layEggs);
+        name = "Eagle";
+    }
+
     public String getName() {
         return name;
     }
+
+   /* @Override
+    public String toString() {
+        return "I am an " + getName() +
+                "I " + (feathers ? " have " : "") + "feathers" +
+                " and I " + (layEggs ? " can " : " can't ") + "layEggs."
+                ;
+    }*/
 }
 
 class Swallow extends FlyingBird {
@@ -92,9 +110,22 @@ class Swallow extends FlyingBird {
         name = "Swallow";
     }
 
+    public Swallow(boolean feathers, boolean layEggs) {
+        super(feathers, layEggs);
+        name = "Swallow";
+    }
+
     public String getName() {
         return name;
     }
+
+    /*@Override
+    public String toString() {
+        return "I am an " + getName() +
+                "I " + (feathers ? " have " : "") + "feathers" +
+                " and I " + (layEggs ? " can " : " can't ") + "layEggs."
+                ;
+    }*/
 }
 
 class Penguin extends NonFlyingBird {
@@ -105,9 +136,22 @@ class Penguin extends NonFlyingBird {
         name = "Penguin";
     }
 
+    public Penguin(boolean feathers, boolean layEggs) {
+        super(feathers, layEggs);
+        name = "Penguin";
+    }
+
     public String getName() {
         return name;
     }
+
+    /*@Override
+    public String toString() {
+        return "I am an " + getName() +
+                "I " + (feathers ? " have " : "") + "feathers" +
+                " and I " + (layEggs ? " can " : " can't ") + "layEggs."
+                ;
+    }*/
 }
 
 class Chicken extends NonFlyingBird {
@@ -118,12 +162,25 @@ class Chicken extends NonFlyingBird {
         name = "Chicken";
     }
 
+    public Chicken(boolean feathers, boolean layEggs) {
+        super(feathers, layEggs);
+        name = "Chicken";
+    }
+
     public String getName() {
         return name;
     }
 
     @Override
     String fly() {
-        return super.fly() + " But I'm smart;)";
+        return super.fly() + " But I'm beautiful;)";
     }
+
+    /*@Override
+    public String toString() {
+        return "I am an " + getName() +
+                "I " + (feathers ? " have " : "") + "feathers" +
+                " and I " + (layEggs ? " can " : " can't ") + "layEggs."
+                ;
+    }*/
 }
