@@ -53,7 +53,7 @@ private float capacity;
                 '}';
     }
 
-    Car() {
+    Car()  {
         type="";
         year=0;
         capacity=0;

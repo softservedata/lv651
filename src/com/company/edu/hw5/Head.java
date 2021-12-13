@@ -125,7 +125,7 @@ for(int i=0; i<numbers.length; i++){
             }
         }
         for(int i=0; i< arr.length; i++){
-            System.out.println("There is cars ordered by year: "+"\n"+arr[i].toString());
+            System.out.println("There is cars ordered by year: "+"\n"+arr[i].toString() );
         }
 
             }
