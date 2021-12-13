@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Homework01 {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
             int a,b;
@@ -39,7 +39,7 @@ public class Homework01 {
                     "Enter 3 for viewing cost of call 3\n" +
                     "Enter 4 for viewing total cost\n" +
                     "Enter 5 t0 stop");
-            Boolean m = true;
+            boolean m = true;
             while (m) {
                 int n;
                 n=sc.nextInt();
