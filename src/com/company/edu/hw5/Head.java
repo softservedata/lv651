@@ -95,7 +95,7 @@ for(int i=0; i<numbers.length; i++){
         Car car2=new Car("Audi", 2020, 27);
         Car car3=new Car("Porshepanamera", 2017, 32);
         Car car4=new Car("BMW", 2018, 35);
-        /*int year=sc.nextInt();
+        int year=sc.nextInt();
         switch(year){
             case 2017:
                 System.out.println("Model of "+year+" year is " + car3.getType());
@@ -112,7 +112,7 @@ for(int i=0; i<numbers.length; i++){
             default:
                 System.out.println("We dont have models from "+year);
                 break;
-        }*/
+        }
         Car[] arr=new Car[]{car1, car2, car3, car4};
         Car tmp;
         for (int i = 0; i < arr.length - 1; i++) {
