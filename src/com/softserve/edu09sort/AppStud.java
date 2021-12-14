@@ -2,6 +2,7 @@ package com.softserve.edu09sort;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class AppStud {
@@ -41,8 +42,15 @@ public class AppStud {
 		//Arrays.sort(students, new Student.ByNameAndAge());
 		//Arrays.sort(students, new Student.ByNameAndAge());
 		//
-		Collections.sort(students, new Student.ByNameAndAge());
+		//Collections.sort(students, new Student.ByNameAndAge());
 		//students.sort(new Student.ByDestName());
+		//
+		Collections.sort(students, new Comparator<Student>() {
+				@Override
+				public int compare(Student st1, Student st2) {
+					return -st1.getName().compareTo(st2.getName());
+				}
+			});
 		//
 		//System.out.println("\nSorted Arrays: " + Arrays.toString(students));
 		System.out.println("\nSorted Arrays: " + students);
