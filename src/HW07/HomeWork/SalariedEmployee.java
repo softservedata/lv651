@@ -65,4 +65,12 @@ public class SalariedEmployee extends Employee{
     public double calculatePay() {
         return getSalary();
     }
+
+    /*@Override
+    public String toString() {
+        return "SalariedEmployee{" +
+                "salary=" + salary +
+                ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
+                '}';
+    }*/
 }

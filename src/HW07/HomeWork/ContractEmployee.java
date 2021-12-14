@@ -84,4 +84,13 @@ public class ContractEmployee extends Employee{
     public double calculatePay() {
         return getSalaryPerHour() * getWorkedHours();
     }
+
+    /*@Override
+    public String toString() {
+        return "ContractEmployee{" +
+                "federalTaxIdmember='" + federalTaxIdmember + '\'' +
+                ", salaryPerHour=" + salaryPerHour +
+                ", workedHours=" + workedHours +
+                '}';
+    }*/
 }
