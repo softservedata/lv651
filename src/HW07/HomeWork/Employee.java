@@ -3,7 +3,8 @@ package HW07.HomeWork;
 /*
  * Create the base class Employee with a string variable employeeld
  * */
-public class Employee {
+public class Employee implements Payment {
+
     private String name;
     private Departments department;
     private String position;
@@ -82,10 +83,16 @@ public class Employee {
     }
 
     @Override
+    public double calculatePay() {
+        return 0;
+    }
+
+    @Override
     public String toString() {
         return "Employee{" +
-                "name='" + name + '\'' +
-                ", employeeID='" + employeeID + '\'' +
+                " ID:'" + employeeID + '\'' +
+                ", name='" + name + '\'' +
+                ", salary:" + calculatePay() +
                 '}';
     }
 }

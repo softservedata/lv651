@@ -5,7 +5,8 @@ package HW07.HomeWork;
  * Describe hourly paid workers in the relevant classes
  * Include a description of federalTaxIdmember in the class of ContractEmployee.
  * */
-public class ContractEmployee extends Employee implements Payment {
+//public class ContractEmployee extends Employee implements Payment {//????????
+public class ContractEmployee extends Employee{
     private String federalTaxIdmember;
     private double salaryPerHour;
     private int workedHours;

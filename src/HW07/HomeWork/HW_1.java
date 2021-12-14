@@ -54,7 +54,14 @@ public class HW_1 {
         john.setSalaryPerHour(5);
 
         initNumbers(company);
+        printListEmployee(company);
 
+    }
+
+    private static void printListEmployee(Employee[] company) {
+        for (Employee e : company) {
+            System.out.println(e);
+        }
     }
 
     private static void initNumbers(Employee[] company) {

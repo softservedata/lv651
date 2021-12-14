@@ -5,7 +5,8 @@ package HW07.HomeWork;
  * Describe fixed paid workers
  * Describe the string variable socialSecurityNumber in the class SalariedEmployee
  * */
-public class SalariedEmployee extends Employee implements Payment {
+//public class SalariedEmployee extends Employee implements Payment { //???????????????
+public class SalariedEmployee extends Employee{
     private double salary;
     private String socialSecurityNumber;
 
