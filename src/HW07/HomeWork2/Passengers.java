@@ -1,7 +1,7 @@
 package HW07.HomeWork2;
 
-public class Passengers {
-    int passegers;
+abstract class Passengers {
+    private int passegers;
 
     public Passengers() {
         this.passegers = 0;

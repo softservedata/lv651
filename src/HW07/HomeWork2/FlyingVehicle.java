@@ -1,14 +1,10 @@
 package HW07.HomeWork2;
 
-public class FlyingVehicle extends Passengers implements Vehicle{
+abstract class FlyingVehicle extends Passengers implements Vehicle {
     public FlyingVehicle() {
     }
 
-    public void fly(){
+    abstract void fly();
 
-    }
-
-    public void land(){
-
-    }
+    abstract void land();
 }
