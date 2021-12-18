@@ -34,7 +34,6 @@ public class Car {
     public void setEngineCapacity(double engineCapacity) {
         this.engineCapacity = engineCapacity;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -46,7 +45,6 @@ public class Car {
         if (Double.compare(car.engineCapacity, engineCapacity) != 0) return false;
         return name.equals(car.name);
     }
-
     @Override
     public int hashCode() {
         int result;
@@ -57,7 +55,6 @@ public class Car {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
-
     @Override
     public String toString() {
         return "Car{" +

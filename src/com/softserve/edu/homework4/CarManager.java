@@ -9,6 +9,7 @@ public class CarManager {
         Car toyota = new Car("Toyota Supra",2002,2.9);
         Car mclaren = new Car("McLaren Senna",2018,4.0);
         Car lexus = new Car("Lexus LFA",2013,4.8);
+        Car honda = new Car("Honda NSX", 1990, 3.0);
 
         Car[] arr = {toyota, nissan, lexus, mclaren};
 
