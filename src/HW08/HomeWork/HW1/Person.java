@@ -23,4 +23,14 @@ public abstract class Person {
     }
 
     abstract public String activity();
+
+    public static class FullName {
+        protected String firstName;
+        protected String lastName;
+
+        public FullName(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+    }
 }

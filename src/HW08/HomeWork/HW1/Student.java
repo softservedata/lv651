@@ -3,6 +3,14 @@ package HW08.HomeWork.HW1;
 public class Student extends Person{
     private int course;
 
+//    public Student(FullName fullName, int age, int course) {
+//        //super(fullName, age);
+//
+//        this.fullName = fullName;
+//        this.course = course;
+//    }
+
+
     public Student(FullName fullName, int age, int course) {
         super(fullName, age);
         this.course = course;
