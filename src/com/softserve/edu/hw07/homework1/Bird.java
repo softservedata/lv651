@@ -6,6 +6,7 @@ public abstract class Bird {
 
     abstract String fly();
 
+
     public Bird(){
 
     }

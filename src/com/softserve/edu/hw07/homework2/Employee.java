@@ -1,6 +1,7 @@
 package com.software.edu.hw07.homework2;
 
 public class Employee {
+
     protected String name;
     protected int age;
     protected double salary;
