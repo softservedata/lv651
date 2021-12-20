@@ -44,6 +44,7 @@ private float hourSalary;
     }
 
     public void setSalary(float salary) {
+
         this.salary = salary;
     }
 
