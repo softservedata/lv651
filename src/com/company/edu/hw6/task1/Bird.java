@@ -1,4 +1,4 @@
-package com.company.edu.hw6;
+package com.company.edu.hw6.task1;
 public abstract class Bird {
     String feathers;
     boolean layEggs;

@@ -1,6 +1,8 @@
-package com.company.edu.hw6;
+package com.company.edu.hw6.task1;
 
-public class Penguin extends NonFlyingBird{
+import com.company.edu.hw6.task1.NonFlyingBird;
+
+public class Penguin extends NonFlyingBird {
     public Penguin(String feathers, boolean layEggs) {
         super(feathers, layEggs);
     }

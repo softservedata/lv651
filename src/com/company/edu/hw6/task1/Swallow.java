@@ -1,6 +1,8 @@
-package com.company.edu.hw6;
+package com.company.edu.hw6.task1;
 
-public class Swallow extends FlyingBird{
+import com.company.edu.hw6.task1.FlyingBird;
+
+public class Swallow extends FlyingBird {
     public Swallow(String feathers, boolean layEggs) {
         super(feathers, layEggs);
     }
