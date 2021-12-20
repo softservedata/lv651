@@ -2,6 +2,7 @@ package com.company.edu.hw7;
 
 public class Head {
     public static void main(String[] args) {
+
 Employee emp1 = new SalariedEmployee("2093ry", 23, 12);
         Employee emp2 = new SalariedEmployee("0923hy", 34, 23);
         Employee emp3 = new SalariedEmployee("dj3289", 12, 12);
