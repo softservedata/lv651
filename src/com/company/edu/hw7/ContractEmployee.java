@@ -5,7 +5,6 @@ public class ContractEmployee extends Employee implements Payment{
     private float fixedPayment;
     private float salary;
 
-
     public void setFixedPayment(float fixedPayment) {
         this.fixedPayment = fixedPayment;
     }
