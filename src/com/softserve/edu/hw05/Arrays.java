@@ -1,17 +1,18 @@
 package com.softserve.edu.hw05;
 
+import org.omg.Messaging.SyncScopeHelper;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Arrays {
 
 
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
         Scanner sc = new Scanner(System.in);
        /* System.out.println("Task 1.");
-       int [] monthDays1 =  {31}; // січень
+       int [] monthDays1 =  {31}; //січень
        int [] monthDays2 =  {28}; // лютий
        int [] monthDays3 =  {31}; // березнь
        int [] monthDays4 =  {30}; // квітень
@@ -19,9 +20,9 @@ public class Arrays {
        int [] monthDays6 =  {30}; // червень
        int [] monthDays7 =  {31}; // липень
        int [] monthDays8 =  {31}; // серпень
-       int [] monthDays9 =  {30}; // вересень
+       int [] monthDays9 =  {30}; //вересень
        int [] monthDays10 =  {31}; // жовтень
-       int [] monthDays11 =  {30}; // листопад
+       int [] monthDays11 =  {30}; //листопад
        int [] monthDays12 =  {31}; // грудень
         System.out.println("Enter the number of month: ");
         boolean n = true;
@@ -78,74 +79,68 @@ public class Arrays {
             myArray[i] = sc.nextInt();
         }
         System.out.println("Your array:");
-        for (int i = 0; i < 10; i++) {
+        for(int i=0; i<10;i++)
+        {
             System.out.print(" " + myArray[i]);
         }
-        int count = 0, sum = 0, product = 1;
-        for (int i = 0; i < 10; i++) {
-            if (myArray[i] > 0) {
+        int count =0, sum=0, product = 1;
+         for(int i =0; i<10; i++)
+         {
+            if(myArray[i]> 0){
                 count++;
             }
-        }
-        if (count == 10) {
-            for (int i = 0; i < 5; i++) {
-                sum = sum + myArray[i];
-            }
-        } else {
-            for (int i = 5; i < 10; i++) {
-                product = product * myArray[i];
-            }
-        }
-        System.out.println("\nSum = " + sum);
+         }
+         if (count==10) {
+             for (int i = 0; i < 5; i++) {
+                 sum = sum + myArray[i];
+             }
+         }else
+         {
+             for(int i =5; i<10; i++)
+             {
+                 product = product * myArray[i];
+             }
+         }
+        System.out.println("\nSum = " + sum );
         System.out.println("Product = " + product);
-    }
-}*/
 
+         */
         System.out.println("Task 3.");
 
         System.out.println("Enter numbers of array: ");
         int[] arr = new int[5];
-        int k;
-        int product = 1;
+
         for (int i = 0; i < 5; i++) {
-            k = sc.nextInt();
-            if(k < 0){
-                System.out.println("Product equal: " + product);
-                System.exit(1);
-                break;
-            }
-            else {
-                arr[i] = k;
-                if(arr[i]%2==0){
-                    product = product * arr[i];
-                }
-            }
+
+                arr[i] = sc.nextInt();
+
         }
-
-
         System.out.println("Your array:");
-        for (int i = 0; i < 5; i++) {
+        for(int i=0; i<arr.length;i++)
+        {
             System.out.print(" " + arr[i]);
         }
-        int count = 0, a = 0, ia = 0;
-        for (int i = 0; count < 2; i++) {
-            if (arr[i] > 0) {
+    int count =0, a=0,ia=0;
+        for (int i =0 ; count < 2; i++)
+        {
+            if(arr[i]> 0 )
+            {
                 count++;
-                a = arr[i];
+                a=arr[i];
                 ia = i;
             }
-
         }
-        System.out.println("\nSecond pos num is - " + a + " it's pos is - " + (ia + 1));
+        System.out.println("\nSecond pos num is - " + a + " it's pos is - " + (ia+1));
         int min = arr[0];
-        int imin = 0;
-        for (int i = 0; i < 5; i++) {
-            if (arr[i] < min) {
+        int imin=0;
+        for(int i=0; i< arr.length; i++)
+        {
+            if(arr[i] < min)
+            {
                 min = arr[i];
                 imin = i;
             }
         }
-        System.out.println("\nMin element is - " + min + " it's position is " + (imin + 1));
-
+        System.out.println("\nMin element is - " + min + " it's position is " + (imin +1));
     }
 }

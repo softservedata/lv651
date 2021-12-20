@@ -1,4 +1,4 @@
-package com.softserve.edu.hw06;
+package com.softserve.edu.hw06.task1;
 
  public class FlyingBird extends Bird {
 

@@ -1,15 +1,18 @@
-package com.softserve.edu.hw06;
+package com.softserve.edu.hw06.task1;
 
-public class Penguin extends NonFlyingBird{
-    public Penguin(String feathers, boolean layEggs){
+public class Chicken extends NonFlyingBird{
+
+    public Chicken(String feathers, boolean layEggs){
         super(feathers,layEggs);
     }
 
     @Override
     public String toString() {
-        return "Penguin{" +
+        return "Chicken{" +
                 "feather='" + feather + '\'' +
                 ", layEggs=" + layEggs +
                 '}';
     }
+
+
 }
