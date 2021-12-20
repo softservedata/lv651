@@ -6,7 +6,6 @@ public class ContractEmployee extends Employee implements Payment{
     private float salary;
 
     public float getFixedPayment() {
-
         return fixedPayment;
     }
 

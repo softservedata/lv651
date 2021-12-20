@@ -37,6 +37,7 @@ private float hourSalary;
 
     public float getWorkHours() {
         return workHours;
+
     }
 
     public void setWorkHours(float workHours) {

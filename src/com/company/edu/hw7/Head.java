@@ -1,6 +1,7 @@
 package com.company.edu.hw7;
 
 public class Head {
+
     public static void main(String[] args) {
 
 Employee emp1 = new SalariedEmployee("2093ry", 23, 12);
