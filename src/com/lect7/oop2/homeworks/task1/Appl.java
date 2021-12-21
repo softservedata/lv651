@@ -13,6 +13,12 @@ public class Appl {
                 new ContractEmployee(4, "Alina"),
         };
 
+      /*  List<Employee> employers = new ArrayList<>();
+        employers.add(new ContractEmployee(3, "Yurii"));
+        employers.add(new SalaryEmployee(1, "Alex", 8));
+        employers.add(new SalaryEmployee(2, "Masha", 6));
+        employers.add(new ContractEmployee(4, "Alina"));*/
+
         Arrays.sort(employers, new EmploeeSorting());
 
 
