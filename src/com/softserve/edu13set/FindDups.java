@@ -1,7 +1,8 @@
 package com.softserve.edu13set;
 
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 public class FindDups {
 	public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class FindDups {
 		}
 		System.out.println("Elements: " + s);
 		*/
-		// /*-
+		/*-
 		// Set<Employee> s = new HashSet<>();
 		Set<Employee> s = new TreeSet<>(new Employee.ByNameAndId());
 		//Set<Employee> s = new TreeSet<>();
@@ -47,19 +48,19 @@ public class FindDups {
 //			System.out.println("employee: " + current // current.toString()
 //					+ "  hashCode(): " + (current != null ? current.hashCode(): null));
 //		}
-		// */
+		*/
 		/*-
 		//Set<String> s = new HashSet<>();
 		List<String> s = new LinkedList<>();
 		for (int i = 0; i < args.length; i++) {
 		    s.add(args[i]);
 		}
-		System.out.println("Original Elements: " + s);
+		System.out.println("Original Elements: " + s); // s.toString()
 		Collections.sort(s);
 		//s.sort();
 		System.out.println("Sorted Elements: " + s);
 		*/
-		/*-
+		// /*-
 		List<Employee> s = new LinkedList<>();
 		s.add(new Employee(123, "Ivan"));
 		s.add(new Employee(121, "Petro"));
@@ -69,7 +70,7 @@ public class FindDups {
 		//Collections.sort(s, new Employee.ByNameAndId());
 		//s.sort(new Employee.ByNameAndId());
 		System.out.println("Sorted Elements: " + s);
-		*/
+		// */
 		//Set<String> s2 = new HashSet<>();
 	}
 }
