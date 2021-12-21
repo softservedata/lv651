@@ -1,5 +1,7 @@
 package com.softserve.edu.homework5;
 
+import java.util.Arrays;
+
 public abstract class Bird {
     boolean feathers;
     boolean layEggs;
@@ -21,21 +23,16 @@ public abstract class Bird {
 
     public static void main(String[] args) {
 
-        Bird eagle = new Eagle(true,true);
-        Bird swallow = new Swallow(false,true);
-        Bird penguin = new Penguin(false,true);
-        Bird chicken = new Chicken(true,true);
+        Bird arr[] = {new Eagle(true,true),
+                      new Swallow(false,true),
+                      new Penguin(false,true),
+                      new Chicken(true,true)};
+        arr[0].fly();
+        arr[1].fly();
+        arr[2].fly();
+        arr[3].fly();
 
-        Bird arr[] = {eagle, swallow, penguin, chicken};
 
-        eagle.fly();
-        swallow.fly();
-        penguin.fly();
-        chicken.fly();
-
-        System.out.println(arr[0]);
-        System.out.println(arr[1]);
-        System.out.println(arr[2]);
-        System.out.println(arr[3]);
+        System.out.println(Arrays.toString(arr));
     }
 }
