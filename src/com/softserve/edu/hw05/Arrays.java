@@ -1,6 +1,5 @@
 package com.softserve.edu.hw05;
 
-import org.omg.Messaging.SyncScopeHelper;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;

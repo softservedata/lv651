@@ -1,4 +1,4 @@
-package com.softserve.edu.hw07;
+package com.softserve.edu.hw07.task1;
 
 public class SalariedEmployee extends Employee implements Payment{
  private String socialSecurityNumber;
