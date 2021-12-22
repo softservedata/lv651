@@ -22,7 +22,7 @@ public abstract class Person {
                 '}';
     }
 
-    abstract public String activity();
+    public abstract String activity();
 
     public static class FullName {
         protected String firstName;
