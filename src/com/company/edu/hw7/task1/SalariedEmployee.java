@@ -1,5 +1,4 @@
-package com.company.edu.hw7;
-
+package com.company.edu.hw7.task1;
 public class SalariedEmployee extends Employee implements Payment{
   private String socialSecurityNumber;
 private float workHours;
