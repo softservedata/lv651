@@ -32,7 +32,7 @@ public class AppStr {
 		System.out.println("str2 = " + str2);
 		*/
 		/*-
-		String str = "\t\t   Tabulated String  \t\n\n";
+		String str = "  \t\t   Tabulated String  \t\n\n  ";
 		System.out.println(str);
 		str = str.trim();
 		System.out.println(str);
@@ -78,16 +78,16 @@ public class AppStr {
 		System.out.println("a1.hashCode() =  " + a1.hashCode());
 		System.out.println("a2.hashCode() =  " + a2.hashCode());
 		*/
-		//
+		/*-
 		String str = "JAVA-SE.8 Study";
 		System.out.println("String: " + str);
 		//String[] arr = str.split("-|.|,| ");
-		String[] arr = str.split("-| |\\.|,s");
+		String[] arr = str.split("-| |\\.|,");
 		System.out.println("arr = " + Arrays.toString(arr));
 		for (String w : arr) {
 			System.out.println(w);
 		}
-		//
+		*/
 		/*-
 		final double PI = 3.1415926;
 		String formatStr = "%S is =%6.2f\n";
@@ -97,7 +97,7 @@ public class AppStr {
 		System.out.printf(formatStr, "pi", PI);
 		System.out.printf("hashcode =%h", 64);
 		*/
-		/*-
+		// /*-
 		String s1 = new String("Hello");
 		String s2 = " And Goodbye";
 		String str = s1 + s2;
@@ -110,10 +110,11 @@ public class AppStr {
 		System.out.println(" sb = " + sb); // toString()
 		System.out.println(" sb.length() = " + sb.length());
 		System.out.println(" sb.capacity() = " + sb.capacity());
-		sb.append("12345");
+		//sb.append("12345");
+		sb.insert(5,"12345");
 		System.out.println("new sb.length() = " + sb.length());
 		System.out.println("new sb.capacity() = " + sb.capacity());
 		System.out.println("Reverse sb = " + sb.reverse());
-		*/
+		// */
 	}
 }
