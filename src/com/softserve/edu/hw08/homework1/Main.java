@@ -6,7 +6,7 @@ import java.util.function.ToDoubleFunction;
 import java.util.function.ToIntFunction;
 import java.util.function.ToLongFunction;
 
-    class Employee {
+    class  Employee {
         protected String id;
         protected String name;
         protected int salary;
