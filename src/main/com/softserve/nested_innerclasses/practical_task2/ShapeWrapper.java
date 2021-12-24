@@ -7,11 +7,8 @@ public class ShapeWrapper<T extends Shape> {
         this.t = t;
     }
 
-    public T getT() {
-        return t;
-    }
+  double getArea(){
+        return t.getArea();
+  }
 
-    public void setT(T t) {
-        this.t = t;
-    }
 }
