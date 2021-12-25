@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Objects;
 
-public class Student implements Comparable {
+public class Student implements Comparable<Student> {
     public static void printStudents(ArrayList<Student> students) {
         Iterator i = students.iterator();
         while (i.hasNext()){
@@ -83,9 +83,7 @@ public class Student implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Student o) {
         return 0;
     }
-
-
 }
