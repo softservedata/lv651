@@ -40,8 +40,9 @@ public class HW3 {
         //Sort Example 1
         //-uni.sort((s1, s2) -> s1.getName().toUpperCase().compareTo(s2.getName()));
         //Sort Example 2
-
-        Collections.sort(uni,Student.compNameDesc);
+        //Collections.sort(uni,Student.compNameDesc);
+        //Sort Example 3
+        Collections.sort(uni);
         //System.out.println(uni);
         Student.printStudents(uni);
     }
