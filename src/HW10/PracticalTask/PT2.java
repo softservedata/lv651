@@ -16,7 +16,7 @@ public class PT2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter surname, name and patronymic");
-        String fullName = scanner.nextLine();           //Zap   Serg   Ivan
+        String fullName = scanner.nextLine();           //Taras Grygorovych Shevchenko
         ArrayList<String> name = new ArrayList<>(Arrays.asList(fullName.split(" ")));
         clearElem(name);
 
