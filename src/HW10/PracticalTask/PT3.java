@@ -11,10 +11,6 @@ public class PT3 {
     Output a message to the console of the validation of each of the entered names.
     */
     public static void main(String[] args) {
-//        String regex1="java"; // шаблон строки ”java”;
-//        String regex2="\\d{3}"; // шаблон строки из трех цифровых символов;
-//        String regex="\\w{3,15}";
-
         String[] names = {"Ivanov Ivan Ivanovich",
                 "Samanta Boris Fox",
                 "Simpson Van_Dam",
@@ -26,7 +22,7 @@ public class PT3 {
         };
         for (String name : names) {
 //            System.out.println(name + " -(" + name.length() + " симв.) - " + (testExpr(name)?"":"не")+ " підходить.");
-            System.out.printf("%25s -(%2d симв.) - %2s підходить.\n", name, name.length(), (testExpr(name) ? "" : "не"));
+            System.out.printf("%25s -(%2d симв.) - %2s підходить.\n", name, name.length(), testExpr(name) ? "" : "не");
         }
     }
 
@@ -36,7 +32,7 @@ public class PT3 {
         //String regex="[A-Za-z\\s]+";
         //String regex="\\w+\\s+";
         //String regex="[a-z]+";
-        //String regex="[A-Za-z]+";           //[A-Za-z]+[0-9]
+        //String regex="[A-Za-z]+";
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(name);
         return m.matches();
