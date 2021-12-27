@@ -16,7 +16,7 @@ public class HW3 {
         System.out.println("Enter some sum. (or 'exit')");
         do{
             String result = scanner.nextLine();
-            if (result.equalsIgnoreCase("exit")) break;
+            if (result.equalsIgnoreCase("exit") || result.isEmpty()) break;
             result = result.replaceAll("[^0-9|^\\.]+","");          //Delete all non-digit symbols except dot
             float sum = Float.parseFloat(result);
             System.out.printf("Sum : \u0024 %.2f\n", sum);
