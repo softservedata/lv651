@@ -34,7 +34,7 @@ public class HW1 {
             for (int i = 0; i < word.length; i++) {
                 wordSet.add(word[i]);
             }
-            allLetters.addAll(wordSet);
+            allLetters.addAll(wordSet);                             //union sets
         }
         System.out.println("Set of letters:"+ allLetters);
         return allLetters.size();
