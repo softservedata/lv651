@@ -24,9 +24,10 @@ public class PT1 {
             int square = squareRectangle(a, b);
             System.out.println("square = " + square);
         } catch (NumberFormatException e) {
-            //e.printStackTrace();
+            e.printStackTrace();
             System.out.println("Mistake!");
         } catch (ArithmeticException ae) {
+            ae.printStackTrace();
             System.out.println("Data can't be < 0");
         }
 
