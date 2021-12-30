@@ -16,7 +16,7 @@ WaterVehicle[] waterVehicles = {new Boat(100,10), new Liner(600, 10)};
         {
             String m;
             m = String.valueOf(sc.next());
-            switch (m){
+            switch (m){ 
                 case "ground":
                     System.out.println(Arrays.deepToString(groundVehicles));
                     break;
