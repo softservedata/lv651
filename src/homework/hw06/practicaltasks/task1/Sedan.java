@@ -5,53 +5,33 @@ import java.util.Date;
 public class Sedan extends Car{
 
     public final String model = "Sedan";
-    private int maxSpeed;
-    private int year;
 
     public Sedan() {
-        this.maxSpeed = 0;
-        this.year = new Date().getYear();
+        super();
     }
 
     public Sedan(int maxSpeed, int year) {
-        this.maxSpeed = maxSpeed;
-        this.year = year;
+        super(maxSpeed, year);
     }
 
     public void run(){
-        System.out.println("run");
-    };
+        System.out.println("run Sedan");
+    }
 
     public void stop(){
-        System.out.println("stop");
-    };
+        System.out.println("stop Sedan");
+    }
 
     public String getModel() {
         return model;
-    }
-
-    public int getMaxSpeed() {
-        return maxSpeed;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
     @Override
     public String toString() {
         return "Car{" +
                 "model='" + model + '\'' +
-                ", maxSpeed=" + maxSpeed +
-                ", year=" + year +
+                ", maxSpeed=" + super.getMaxSpeed() +
+                ", year=" + super.getYear() +
                 '}';
     }
 }

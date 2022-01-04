@@ -1,9 +1,12 @@
 package homework.hw06.tasks.task1;
 
-public class NonFlyingBird {
+public class NonFlyingBird extends Bird{
 
-    public void fly() {
-        System.out.print("can't fly");
+    public String fly() {
+        return "can't fly";
     }
 
+    public NonFlyingBird(boolean feathers, boolean layEggs) {
+        super(feathers, layEggs);
+    }
 }

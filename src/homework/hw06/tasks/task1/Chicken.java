@@ -1,18 +1,18 @@
 package homework.hw06.tasks.task1;
 
-public class Eagle extends FlyingBird{
+public class Chicken extends NonFlyingBird{
 
-    public Eagle() {
+    public Chicken() {
         super(true, true);
     }
 
-    public Eagle(boolean feathers, boolean layEggs) {
+    public Chicken(boolean feathers, boolean layEggs) {
         super(feathers, layEggs);
     }
 
     @Override
     public String toString() {
-        return "Eagle{" +
+        return "Chicken{" +
                 " have feathers = " + feathers +
                 ", lay eggs = " + layEggs +
                 '}';
