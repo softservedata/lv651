@@ -10,7 +10,6 @@ import java.util.regex.Pattern;
 public class Runner {
     public static void main(String[] args) {
         task1();
-        task2();
         task3();
     }
 
@@ -21,21 +20,6 @@ public class Runner {
         str1 = str1.substring(0, 2);
         str2 = str2.substring(0, 2);
         System.out.println("Are the beginnings are equals? " + str1.equals(str2));
-    }
-
-    public static void task2() {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter name: ");
-        String name = sc.nextLine().toUpperCase();
-        System.out.println("Enter surname: ");
-        String surname = sc.nextLine().toUpperCase();
-        System.out.println("Enter patronymic: ");
-        String patronymic = sc.nextLine().toUpperCase();
-
-        System.out.println("Your surname is: " + surname + "\nInitials: " + name.charAt(0) + ". " + patronymic.charAt(0) + ".");
-        System.out.println("Name: " + name);
-        System.out.println("Total info: " + name + " " + patronymic + " " + surname + ".");
     }
 
     public static void task3() {
