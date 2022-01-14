@@ -24,7 +24,7 @@ public class Student extends Person {
 	}
 
 	public void info() {
-		System.out.println(String.format("First name:	 %s , Last name: 	%s , Age:	 %d ,idCourse: 	%s ",
+		System.out.println(String.format("First name: %s , Last name: %s , Age: %d ,idCourse: %s ",
 				getFullNane().getFirstName(), getFullNane().getLastName(), getAge(), getIdCourse()));
 	}
 

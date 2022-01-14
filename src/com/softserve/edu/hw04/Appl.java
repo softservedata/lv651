@@ -11,7 +11,7 @@ public class Appl {
 		System.out.println(d1.id);
 		
 		Dog d2 = new Dog ("Rex" , 10, Breed.DACHSHUND);
-		System.out.println(d2.id);
+		System.out.println(Dog.id);
 		Dog d3 = new Dog ("Oskar" , 2, Breed.CHIHUAHUA);
 	
 		System.out.println(d1.toString());

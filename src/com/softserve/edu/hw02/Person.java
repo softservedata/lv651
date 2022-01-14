@@ -95,7 +95,7 @@ public class Person {
 		System.out.println(" Input year of birth: ");
 		int birthYear = Integer.parseInt(sc.nextLine()); 
 		p.setBirthYear(birthYear);
-		//sc.close();
+		sc.close();
 		return p;
 	}
 		

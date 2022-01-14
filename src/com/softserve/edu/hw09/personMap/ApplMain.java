@@ -34,11 +34,9 @@ public class ApplMain {
 		        }
 		        if (next.getValue()=="Bonapart") { 
 			        iter.remove();
-			    System.out.println(personMap);
 		    	}   
 		        
-			        
-		    }  
+		     }
+		    System.out.println(personMap);   
 	}
-		
 }
