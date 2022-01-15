@@ -1,11 +1,11 @@
 package com.company.edu.hw9.task1;
 
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Head {
     public static void main(String[] args) {
+        /*Task1
         Set<String> set1= new HashSet<>();
         set1.add("element0");
         set1.add("element2");
@@ -35,5 +35,35 @@ public class Head {
         set.retainAll(set2);
         return set;
     }
+         */
+        HashMap<String,String> personMap = new HashMap<String, String>();
+        personMap.put("Fedyshyn", "Oleg");
+        personMap.put("Trush", "Nestor");
+        personMap.put("Konovart", "Hordii");
+        personMap.put("Shira", "Volodya");
+        personMap.put("Slusarenko", "Pavlo");
+        personMap.put("Sukhan", "Denis");
+        personMap.put("Skovorodcev", "Anatoliy");
+        personMap.put("Kravchenko", "Denis");
+        personMap.put("Skrubin", "Nazar");
+        personMap.put("Bogohulceva", "Lina");
 
+        System.out.println(personMap);
+        String valToRemove = "Hordii";
+
+        Iterator<Map.Entry<String, String>> iterator = personMap.entrySet().iterator();
+        HashSet<String> valueSet = new HashSet<String>();
+        while (iterator.hasNext()) {
+            Map.Entry<String, String> entry = iterator.next();
+            //to find duplicate value
+            if (!valueSet.add(entry.getValue())) {
+                System.out.println("Dublicate value is " + entry.getValue());
+            }
+            //to remove value
+            if (valToRemove.equals(entry.getValue())) {
+                iterator.remove();
+            }
+        }
+        System.out.println(personMap);
+    }
 }
