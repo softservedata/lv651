@@ -15,10 +15,5 @@ public class Line  {
 		return "Line		 [x0 = " + p1.getX() + "	y0 = " +p1.getY()+ "		x1 = " +p2.getX() + "		y1 = "+p2.getY() + "			]";
 	}
 	
-//	public Point getCoord ( Point p) {
-//		int x = p.getX();
-//		int y = p.getY();
-//		return (p.getX(), p.getY());
-//	
-//	}
+
 }

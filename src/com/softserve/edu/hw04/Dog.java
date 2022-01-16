@@ -7,7 +7,7 @@ public class Dog {
 	private String name;
 	private int age;
 	public enum Breed {
-		DACHSHUND, CHIHUAHUA, HUSKIE  
+		DACHSHUND, CHIHUAHUA, HUSKIE
 	}
 	Breed breed; 
 	
