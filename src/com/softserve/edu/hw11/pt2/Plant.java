@@ -34,10 +34,10 @@ public class Plant {
 
   @Override
   public String toString() {
-    return "Plant { " +
+    return "\nPlant { " +
             "size=" + size +
-            ", color=" + colorExc +
-            ", type=" + typeExc +
+            ",    color=" + colorExc +
+            ",    type=" + typeExc +
             " }";
   }
 

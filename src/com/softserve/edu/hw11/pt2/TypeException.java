@@ -4,7 +4,9 @@ public class TypeException {
 
 
     public enum Type {
-        ROSE, TULIP, СHAMOMILE }
+        ROSE, TULIP, СHAMOMILE, OAK
+    }
+
     Type type;
 
     public Type getType() {
