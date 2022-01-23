@@ -1,0 +1,4 @@
+Number of lines in file1.txt: 5
+The longest line in file1.txt: Study: Second course of Lviv Polytechnic National University
+Name: Bohdan Dzoba
+Birth day: 03.08.2003

@@ -1,0 +1,5 @@
+Name: Bohdan Dzoba
+Date of birthday: 03.08.2003
+Work: None
+Study: Second course of Lviv Polytechnic National University
+Courses: JavaCore
