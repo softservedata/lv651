@@ -23,7 +23,6 @@ public class PT1 {
 			System.out.println(text.substring(m.start(),m.end()) +"*");
 		}
 
-
 	}
 
 }
