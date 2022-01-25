@@ -1,6 +1,8 @@
 package com.softserve.edu18lambda;
 
-import java.util.function.Supplier;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 class Person {
 	private String name;
@@ -40,13 +42,13 @@ public class ApplFunction {
 		System.out.println("names = " + names);
 		names.forEach(name -> System.out.println("Hello, " + name));
 		*/
-		// /*-
+		/*-
 		Supplier<Person> personSupplier = Person::new; // new Person();
 		Person p = personSupplier.get();
 		p.setName("Ivan");
 		System.out.println("name = " + p.getName());
-		// */
-		/*-
+		*/
+		// /*-
 		List<String> names = Arrays.asList("bob", "josh", "megan");
 		System.out.println("Original List = " + names);
 //		List<String> names2 = new ArrayList<>();
@@ -58,7 +60,7 @@ public class ApplFunction {
 //		names = new ArrayList<>(names2);
 		names.replaceAll(name -> name.toUpperCase());
 		System.out.println("Updated List = " + names);
-		*/
+		// */
 		/*-
 		List<String> names = Arrays.asList("bob", "josh", "megan");
 		System.out.println("Original List = " + names);
