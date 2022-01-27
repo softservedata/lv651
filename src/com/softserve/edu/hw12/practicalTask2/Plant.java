@@ -1,62 +1,90 @@
 package com.software.edu.hw12.practicalTask2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Plant {
-    private int size;
-    private Main.Color color;
-    private Main.Type type;
 
-    public Plant(String type, String color, int size) throws ColorException, TypeException {
-        Main.Color c = colorStrToEnum(color);
-        Main.Type t = typeStrToEnum(type);
-        this.size = size;
-        this.color = c;
-        this.type = t;
+    enum Color {
+        RED, WHITE, GREEN, YELLOW, ORANGE, BLUE, PURPLE
     }
 
+    enum Type {
+        HERBS, SHRUBS, TREES
 
-    private Main.Type typeStrToEnum(String type) throws TypeException {
-        switch (type.toLowerCase()) {
-            case "herbs":
-                return Main.Type.HERBS;
-            case "shrubs":
-                return Main.Type.SHRUBS;
-            case "trees":
-                return Main.Type.TREES;
-            default:
-                throw new TypeException("Input only herbs, shrubs and trees");
+    }
+    //public class Plant {
+        private int size;
+        private Color color;
+        private Type type;
 
+        public Plant(String type, String color, int size) throws ColorException, TypeException {
+            Color c = colorStrToEnum(color);
+            Type t = typeStrToEnum(type);
+            this.size = size;
+            this.color = c;
+            this.type = t;
+        }
+
+
+        private Type typeStrToEnum(String type) throws TypeException {
+            switch (type.toLowerCase()) {
+                case "herbs":
+                    return Type.HERBS;
+                case "shrubs":
+                    return Type.SHRUBS;
+                case "trees":
+                    return Type.TREES;
+                default:
+                    throw new TypeException("Input only herbs, shrubs and trees");
+
+            }
+        }
+
+
+        private Color colorStrToEnum(String color) throws ColorException {
+            switch (color.toLowerCase()) {
+                case "blue":
+                    return Color.BLUE;
+                case "red":
+                    return Color.RED;
+                case "white":
+                    return Color.WHITE;
+                case "green":
+                    return Color.GREEN;
+                case "yellow":
+                    return Color.YELLOW;
+                case "orange":
+                    return Color.ORANGE;
+                case "purple":
+                    return Color.PURPLE;
+                default:
+                    throw new ColorException("Input only color blue, red, white, green, yellow, orange, purple");
+
+            }
+        }
+
+        @Override
+        public String toString() {
+            return "Plant[" +
+                    "size=" + size +
+                    ", color=" + color +
+                    ", type=" + type +
+                    ']';
+        }
+    public static void main(String[] args) throws ColorException, TypeException {
+        try{
+            List<Plant> plants = new ArrayList<>();
+            plants.add(new Plant("herbs", "black", 7));
+            plants.add(new Plant("trees", "green", 120));
+            plants.add(new Plant("shrubs", "red", 15));
+            plants.add(new Plant("trees", "yellow", 300));
+            plants.add(new Plant("threes","green",400));
+
+            System.out.println(plants);
+        }catch (ColorException | TypeException e){
+            System.err.println(e.getMessage() + "\n");
         }
     }
 
-
-    private Main.Color colorStrToEnum(String color) throws ColorException {
-        switch (color.toLowerCase()) {
-            case "blue":
-                return Main.Color.BLUE;
-            case "red":
-                return Main.Color.RED;
-            case "white":
-                return Main.Color.WHITE;
-            case "green":
-                return Main.Color.GREEN;
-            case "yellow":
-                return Main.Color.YELLOW;
-            case "orange":
-                return Main.Color.ORANGE;
-            case "purple":
-                return Main.Color.PURPLE;
-            default:
-                throw new ColorException("Input only color blue, red, white, green, yellow, orange, purple");
-
-        }
-    }
-
-    @Override
-    public String toString() {
-        return "Plant[" +
-                "size=" + size +
-                ", color=" + color +
-                ", type=" + type +
-                ']';
-    }
 }
