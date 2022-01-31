@@ -1,13 +1,11 @@
 package com.softserve.edu.hw05;
 
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Arrays {
 
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
        /* System.out.println("Task 1.");
@@ -71,7 +69,7 @@ public class Arrays {
                     break;
             }
         }*/
-        /*System.out.println("Task 2.");
+        System.out.println("Task 2.");
         System.out.println("Enter numbers of array: ");
         int[] myArray = new int[10];
         for (int i = 0; i < 10; i++) {
@@ -103,7 +101,7 @@ public class Arrays {
         System.out.println("\nSum = " + sum );
         System.out.println("Product = " + product);
 
-         */
+         /*
         System.out.println("Task 3.");
 
         System.out.println("Enter numbers of array: ");
@@ -140,6 +138,6 @@ public class Arrays {
                 imin = i;
             }
         }
-        System.out.println("\nMin element is - " + min + " it's position is " + (imin +1));
+        System.out.println("\nMin element is - " + min + " it's position is " + (imin +1));*/
     }
 }
