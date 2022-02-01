@@ -1,6 +1,7 @@
 package com.softserve.edu.nomework9.HomeWork;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,6 +15,8 @@ public class HM1 {
         }
         System.out.println(list);
         scanner.close();
+
+        System.out.println("longest word in the sentence: " + Collections.max(list));
 
         StringBuilder sb = new StringBuilder(list.get(1));
         sb.reverse();
