@@ -1,6 +1,6 @@
 package com.softserve.edu.hw12.HW2;
 
-public class MyThread2 implements Runnable{
+public class MyThread2 implements Runnable {
 
     @Override
     public void run() {
@@ -12,7 +12,7 @@ public class MyThread2 implements Runnable{
                 e.printStackTrace();
             }
 
-            Thread.yield();
+//            Thread.yield();
             synchronized (DeadLock.monitor1) {
                 System.out.println("Success!");
             }

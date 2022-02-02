@@ -3,7 +3,7 @@ package com.softserve.edu.hw10.regex;
 
 import java.util.*;
 
-public class HW1 {
+public class hw1 {
 
     public static void main(String[] args) {
 

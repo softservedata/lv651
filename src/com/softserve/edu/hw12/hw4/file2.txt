@@ -1,0 +1,2 @@
+Number of lines in file1.txt = 10
+Longest line is:  the modern Ukrainian language. Shevchenko is also known  (55 symbols )

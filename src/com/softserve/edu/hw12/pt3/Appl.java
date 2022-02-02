@@ -38,21 +38,22 @@ public class Appl {
         System.out.println("Shortest line is:  " + shortestLine + "  (" + shortestLine.length() + " symbols )");
     }
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         List<String> mylist = new ArrayList<String>();
-        String fileName = "C:/B/lv651/src/com/softserve/edu/hw12/pt3/mytext.txwt";;
+        String fileName = "C:/B/lv651/src/com/softserve/edu/hw12/pt3/mytext.txt";
         try {
 
             FileReader fr = new FileReader(fileName);
             BufferedReader br = new BufferedReader(fr);
-            String s = "";
+            String s = null;
             int count = 0;
             System.out.println("Read data from file: " + fileName);
 
-            while ((s = br.readLine()) != "") {
+            while ((s = br.readLine()) != null) {
                 mylist.add(s);
                 System.out.println("Line " + ++count + " read:   " + s.length() + " symbols.");
             }
+            System.out.println(mylist);
             br.close();
         } catch (FileNotFoundException e) {
             System.out.println("File not found ");
@@ -62,6 +63,9 @@ public class Appl {
 //            e.printStackTrace();
         }
 
+        Appl appl = new Appl();
+        appl.findAndWrite(mylist);
+
 
         getLongestAndShortestLine(mylist);
         findAndWrite(mylist);
@@ -69,4 +73,3 @@ public class Appl {
 
     }
 }
-
