@@ -1,4 +1,4 @@
-package com.softserve.edu.nomework9.HomeWork;
+package com.softserve.edu.homework9.HomeWork;
 
 import java.util.ArrayList;
 import java.util.Collections;
