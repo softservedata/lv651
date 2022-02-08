@@ -10,7 +10,6 @@ public class Appl {
 
     public static void main(String[] args) {
         int n = 0;
-        OptionalInt num;
 
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +17,7 @@ public class Appl {
         try {
             n =Integer.parseInt(br.readLine());
         }catch (IOException e){
-            e.getMessage();
+            e.printStackTrace();
         }
         //1
         Random random = new Random();
