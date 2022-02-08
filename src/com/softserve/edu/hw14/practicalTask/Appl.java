@@ -1,49 +1,38 @@
 package com.software.edu.hw14.practicalTask;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
 
-@FunctionalInterface
-interface MyFunctional{
-    double f(double x);
-}
 
 public class Appl {
 
-    public List<Double> rndm(MyFunctional mf, int n){
-        List<Double> dList = new ArrayList<Double>();
-        double num = 0;
-        for (int i = 0; i < n; i++) {
-            dList.add( mf.f(n));
-
-        }
-        return dList;
-    }
-
-    public double SortedRndm(MyFunctional mf, int n){
-        List<Double> dList = new ArrayList<Double>();
-        double num = 0;
-        double biggest = 0;
-        for (int i = 0; i < n; i++) {
-            dList.add(mf.f(n));
-            Collections.sort(dList);
-        }
-        biggest = dList.get(0);
-
-
-        System.out.println("Sorted random numbers: "+ dList);
-        return biggest;
-    }
-
-
     public static void main(String[] args) {
-        Appl appl = new Appl();
+        int n = 0;
+        OptionalInt num;
 
-        MyFunctional f1 =  x -> Math.random()*15;
 
-        System.out.println("Random numbers: "+ appl.rndm(f1,5));
-        System.out.println("The biggest number: : "+ appl.SortedRndm(f1,5));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Please, enter the number: ");
+        try {
+            n =Integer.parseInt(br.readLine());
+        }catch (IOException e){
+            e.getMessage();
+        }
+        //1
+        Random random = new Random();
+        System.out.println("Random numbers: ");
+        random.ints().limit(n).forEach(System.out::println);
+
+        //2
+        System.out.println("Sorted: ");
+        random.ints().limit(n).sorted().forEach(System.out::println);
+
+
+
+
+
 
 
     }
