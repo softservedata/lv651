@@ -2,6 +2,7 @@ package com.softserve.edu23;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -45,7 +46,7 @@ public class ApplDB {
 		/*
 		//String query = "INSERT INTO temp (name,login,password,age) VALUES ('Ivan','iva','qwerty',21);";
 		String query = "INSERT INTO temp (name,login,password,age) VALUES ('Petro','pet','123456',22);";
-        //String query = "INSERT INTO temp (id,name,login,password,age) VALUES (1,'Petro','pet','123456',22);"; // for postgre
+        // String query = "INSERT INTO temp (id,name,login,password,age) VALUES (2,'Petro2','pet2','123456',22);"; // for postgre
         //String query = "INSERT INTO temp (id,name,login,password,age) VALUES (3,'Ivan','iv','123456',22);"; // for postgre
 		//
 		st.execute(query);
@@ -54,11 +55,42 @@ public class ApplDB {
 		//st.executeUpdate("UPDATE temp SET name='Tolik' WHERE login LIKE 'p%';");
 		//st.executeUpdate("UPDATE temp SET name='Petro' WHERE id=2;");
 		//st.execute("DELETE FROM temp WHERE name='Tolik';");
-		// /*-
+		//
+		/*
+		con.setAutoCommit(false);
+		try {
+    		st.executeUpdate("UPDATE temp SET name='Tolik' WHERE login LIKE 'p%';");
+    		st.executeUpdate("UPDATE temp SET name='Petro' WHERE id=2;");
+    		con.commit();
+    		System.out.println("con.commit();");
+		} catch(Exception e) {
+		    System.out.println("con.rollback();");
+		    con.rollback();
+		}
+		con.setAutoCommit(true);
+		*/
+		/*-
 		//st.execute("USE lv651;");
 		ResultSet rs = st.executeQuery("select * from temp;");
 		//st.execute("select * from temp;");
-		//ResultSet rs = st.getResultSet();
+		//ResultSet rs = st.getResultSet(); // for 1 only
+		*/
+		// /*-
+		//String queryStr = "SELECT * FROM temp WHERE name LIKE 'Pet%';";
+		//String queryStr = "SELECT * FROM temp WHERE name = ?;";
+		//String queryStr = "SELECT * FROM temp WHERE name LIKE ?;";
+		String queryStr = "SELECT * FROM temp WHERE name LIKE ?||'%';";
+		PreparedStatement pstmt = con.prepareStatement(queryStr);
+		//pstmt.setString(1, "Petr%");
+		pstmt.setString(1, "Petr");
+		ResultSet rs = pstmt.executeQuery();
+		//ResultSet rs = st.executeQuery(queryStr);
+		// */
+		/*
+		String queryStr = "SELECT * FROM temp WHERE name LIKE '%s%%';";
+		//System.out.println(String.format(queryStr, "Petr"));
+		ResultSet rs = st.executeQuery(String.format(queryStr, "Petr"));
+		*/
 		//
 		//ResultSet rs = st.executeQuery("select * from users;");
 		int columnCount = rs.getMetaData().getColumnCount();
@@ -75,10 +107,16 @@ public class ApplDB {
 			        System.out.print("\t");
 			    }
 				System.out.print(rs.getString(i) + "\t");
+				if (i == columnCount) {
+                    System.out.print("\t Column type = " + rs.getMetaData().getColumnType(i));
+                }
 			}
 			System.out.println();
 		}
 		System.out.println("before close");
+//        if (pstmt != null) {
+//            pstmt.close();
+//        }
 		if (rs != null) {
 			rs.close();
 		}
