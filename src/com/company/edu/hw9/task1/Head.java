@@ -40,7 +40,7 @@ public class Head {
         personMap.put("Fedyshyn", "Oleg");
         personMap.put("Trush", "Nestor");
         personMap.put("Konovart", "Hordii");
-        personMap.put("Shira", "Volodya");
+        personMap.put("Shyra", "Volodya");
         personMap.put("Slusarenko", "Pavlo");
         personMap.put("Sukhan", "Denis");
         personMap.put("Skovorodcev", "Anatoliy");
