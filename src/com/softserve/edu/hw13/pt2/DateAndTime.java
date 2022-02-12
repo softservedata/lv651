@@ -6,10 +6,7 @@
 package com.softserve.edu.hw13.pt2;
 
 import java.text.SimpleDateFormat;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 import java.time.temporal.TemporalAdjusters;
 
 import static java.time.temporal.TemporalAdjusters.firstInMonth;
@@ -19,6 +16,7 @@ public class DateAndTime {
 
 
         long timeUnix = System.currentTimeMillis();
+
 
 
 

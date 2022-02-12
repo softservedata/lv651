@@ -24,17 +24,10 @@ public class PT1 {
             return a * b;
     }
 
-
-
-
     public static void main(String[] args) {
-
-
-//            System.out.println(squareRectangle());
 
         System.out.println("GO!!!");
         try {
-
             System.out.println("Area: " + squareRectangle());
 
 
