@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Flat {
 
-    private int area, num_res, ex_time;
+    private int area, ex_time;
     private double gas, water, energy,gas_per_res,water_per_res,energy_per_res;
     private double res_per_metre = 0.1;
     private double gas_per_metre = 10;
@@ -50,9 +50,8 @@ public class Flat {
     }
 
     List<String> Names = new ArrayList<>();
-
+    int num_res = Names.size();
     public void addRes() {
-        int num_res = Names.size();
         if (area * res_per_metre >= num_res + 1) {
             String NewName;
             System.out.println("Введіть ім'я: ");

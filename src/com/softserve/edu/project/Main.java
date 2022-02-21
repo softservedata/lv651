@@ -1,7 +1,5 @@
 package com.softserve.edu.project;
 
-import com.sun.javaws.IconUtil;
-
 import java.util.Scanner;
 
 public class Main {
@@ -22,8 +20,12 @@ public class Main {
                     break;
                 case 2:
                     Flat1.Prices();
+                    Project.main();
+                    System.out.println("Оновнелі дані: ");
+                    Flat1.get_props();
                     break;
                 case 3:
+
                     Flat1.addRes();
                     System.out.println("Оновнелі дані: ");
                     Flat1.get_props();
