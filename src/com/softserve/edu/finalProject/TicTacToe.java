@@ -12,7 +12,7 @@ public class TicTacToe {
 
     public static String[][] Grids = new String[ROWS][COLUMNS];
 
-    public static  int statusGame;
+    public static int statusGame;
 
     public static final int STATUS_GAME_CONT = 0;
     public static final int STATUS_GAME_DRAW = 1;
@@ -21,11 +21,11 @@ public class TicTacToe {
 
     public static String activesPlayer;
 
-    public static Scanner sc = new Scanner(System.in);
-
+   public static Scanner sc = new Scanner(System.in);
 
 
     public static void main(String[] args) {
+        System.out.println("Вітаємо! Гра розпочалась!\n");
         StartGame();
         do {
             GetInput();
@@ -114,10 +114,10 @@ public class TicTacToe {
             }
         }
 
-        for (int i = 0; i < COLUMNS; i++) {
+        for (int i = 0; i <COLUMNS ; i++) {
             countTheSame = 0;
-            for (int j = 0; j < ROWS; j++) {
-                if (Grids[0][i] != CROSS && Grids[0][i] == Grids[j][i]) {
+            for (int ryad = 0; ryad < ROWS; ryad++) {
+                if (Grids[0][i] != EMPTY && Grids[0][i] == Grids[ryad][i]) {
                     countTheSame++;
                 }
             }
@@ -153,7 +153,4 @@ public class TicTacToe {
         System.out.println();
 
     }
-
-
-
 }
