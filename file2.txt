@@ -1,0 +1,4 @@
+Number of lines:3
+Longest line:Student of LPNU
+Name:Oleh Fedyshyn
+Birthday date:02.02.2003
